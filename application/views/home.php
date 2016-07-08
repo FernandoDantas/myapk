@@ -2,7 +2,7 @@
 	<section class="layout-chamada">
 		<div class="container">
 			<div class="chamada">
-				<h1 class="chamada__titulo">Tenha seu próprio aplicativo android ou web</h1>
+				<h1 class="chamada__titulo">Tenha seu próprio aplicativo</h1>
 				<p class="chamada__subtitulo">Desenvolvemos aplicativos android e sistemas web com boas práticas. </p>
 
 				<div class="chamada__acao">
@@ -17,13 +17,13 @@
    
    <div class="depoimento">
      <blockquote>
-       Eu tinha perdido totalmente o controle da minha empresa.
-       Depois que conheci a empresa MyApk, me sinto muito mais organizado e confiante no futuro.
+       Eu tinha perdido totalmente o controle das minhas finanças.
+       Depois que conheci a empresa MyApk e comecei a utilizar o cloudfinc, me sinto muito mais organizado e confiante no futuro.
      </blockquote>
 
     <div class="depoimento__autor">
-        <img src="<?= base_url('assets/imagens/joao-da-silva.jpg')?>" alt="João da Silva" width="180" height="180">
-      <p>João Da Silva</p>
+        <img src="<?= base_url('assets/imagens/Juliano.jpg')?>" alt="Juliano" width="180" height="180">
+      <p>Juliano</p>
     </div>
 
    </div>
