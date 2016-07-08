@@ -6,7 +6,7 @@
 				<p class="chamada__subtitulo">Desenvolvemos aplicativos android e sistemas web com boas práticas. </p>
 
 				<div class="chamada__acao">
-					<a href="#solucoes" class="botao  botao--principal" data-toggle="tooltip" data-placement="bottom" title="Soluções">Conheça nossas soluções</a>
+					<a href="<?=base_url('servicos')?>" class="botao  botao--principal" data-toggle="tooltip" data-placement="bottom" title="Soluções">Conheça nossas soluções</a>
 				</div>
 			</div>
 		</div>
