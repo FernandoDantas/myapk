@@ -23,7 +23,7 @@
 
     <div class="depoimento__autor">
         <img src="<?= base_url('assets/imagens/Juliano.jpg')?>" alt="Juliano" width="180" height="180">
-      <p>Juliano</p>
+      <p>Juliano Santos</p>
     </div>
 
    </div>

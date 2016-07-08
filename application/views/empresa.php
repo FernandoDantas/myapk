@@ -1,4 +1,3 @@
-<?php $this->load->view('commons/header'); ?>
 
 <div class="container">
 <div class="page-header">
@@ -11,5 +10,5 @@ Essa é uma página simples, contendo cabeçalho e rodapé, e o co
 nteúdo sendo um título e 2 parágrafos.
 </p>
 </div>
-<?php $this->load->view('commons/footer'); ?>
+
 
