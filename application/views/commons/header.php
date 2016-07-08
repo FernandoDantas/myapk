@@ -26,7 +26,7 @@
 
           <ul class="menu js-menu">
             <li class="menu__item">
-                <a href="<?=base_url('empresa')?>"" class="texto__link__menu" data-toggle="tooltip" data-placement="bottom" title="A Empresa">A Empresa</a>
+                <a href="<?=base_url('empresa')?>" class="texto__link__menu" data-toggle="tooltip" data-placement="bottom" title="A Empresa">A Empresa</a>
               </li>
               <li class="menu__item">
                 <a href="<?=base_url('servicos')?>" class="texto__link__menu" data-toggle="tooltip" data-placement="bottom" title="Serviços">Serviços</a>
