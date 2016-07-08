@@ -1,0 +1,134 @@
+/*--------------------*\
+  PLANO
+\*--------------------*/
+.plano {padding: 10px; border: 1px solid #95a4a5; font-size:1.4rem; position:relative;}/*14px*/
+
+.plano--mais-popular::after{background-color:#c20303; color:#fff; content:"MAIS POPULAR"; position:absolute;
+ top:-10px; left:-10px; font-size:0.7142em; line-height:2.5; padding:0 10px;}
+
+.plano__cabecalho {background-color: #004b86; color: #fff; text-align: center; line-height: 2.5;
+ margin: -10px; margin-bottom: 0;font-weight: normal; font-size: 2em;}
+
+.plano__preco {text-align: center; font-size: 2em; margin: 20px 0;}
+
+.plano__caracteristicas {list-style: none; padding: 0; margin: 20px 0; font-size: 1em;}
+
+.plano__caracteristicas > li { text-align: center;}
+
+.plano__rodape {text-align: center;}
+
+
+/*--------------------*\
+  BOTAO
+\*--------------------*/
+.botao{display: inline-block; background-color:#bbb; color:#fff; padding:0.8em 1.2em; text-decoration: none;
+ font-size: 1em; line-height:normal;}
+.botao:hover, .botao:focus{background-color:#003b6a; text-decoration: none; color:#fff;}
+
+.botao--assinar, .botao--login{background-color:#127d00; }
+.botao--assinar:hover, .botao--assinar:focus,
+.botao--login:hover, .botao--login:focus{background-color:#0e6400;}
+
+.botao--principal{background-color:#004b86;}
+.botao--principal:hover, botao--principal:focus{background-color:#003b6a;}
+
+/*--------------------*\
+  CHAMADA
+\*--------------------*/
+.chamada{font-size:1.6rem; text-align: center;}/*1.6 * 10px = 16px */
+
+.chamada__titulo{margin:0; padding:20px 0 20px 0;color: #fff; font-size: 3.375em; line-height:0.9; text-shadow:1px 3px #313131; background-color: rgba(0, 0, 0, .7);}/* 54px / 16px = 3.375*/
+.chamada__subtitulo{margin:60px 0; color:#fff; font-size:1em; background-color: rgba(0, 0, 0, .7);}
+.chamada__acao{font-size:1em;}
+
+@media(min-width:992px){
+	.chamada{padding-left:10%; padding-right:10%; font-size:2.2rem;}
+}
+
+/*--------------------*\
+  DEPOIMENTO
+\*--------------------*/
+.depoimento{font-size:2.2rem;}/*22px*/
+
+@media(min-width: 992px)  {
+	.depoimento{padding-left:15%; padding-right:15%; font-size:2.8rem;}
+}
+
+.depoimento > blockquote{ margin:0; padding:0 60px; text-align:center; font-size:1em; position:relative;}
+
+.depoimento > blockquote::before{position:absolute; color:#ccc; content:"\201C"; font-size:8em; left:0; top:-0.35em;}/*176px*/
+
+.depoimento__autor{margin-top: 40px; text-align:center; font-size: 0.7272em;}
+.depoimento__autor > img{border-radius:50%;}
+.depoimento__autor > p{margin-top:10px;}
+
+/*--------------------*\
+  NAVEGAÇÂO
+\*--------------------*/
+.navegacao{}
+
+.navegacao img{top: 0; width: 100px; width: 136px; height: 83px; background: #fff; border: 4px solid #004b86; border-top: none; box-shadow: 0 0 4px #333;}
+
+.navegacao a{text-transform: uppercase; padding:0.8em 0.8em;}
+
+.texto__link__menu{color: #FFFFFF;}
+
+.texto__link__menu:hover, .texto__link__menu:focus{background-color: #337ab7; color: #FFF; font-size: 1em; text-decoration: none;}
+
+.navegacao--assinatura {text-align: center;}
+
+.navegacao__menu{float:right;}
+
+/*--------------------*\
+  BOTAO-CHAVEADOR
+\*--------------------*/
+.botao-chaveador{width:24px; height:24px; background:none; border:0; background-image:url("../imagens/bars.png"); outline:none;}
+
+@media(min-width: 992px){
+	.botao-chaveador{display:none;}
+}
+
+/*--------------------*\
+  MENU
+\*--------------------*/
+.menu{list-style:none; font-size:1.4rem; margin: 0;}
+
+@media(max-width: 991px){
+
+.menu{position:fixed; top:0; left:0; bottom:0; width:200px; background-color: rgba(0, 0, 0, 0.9); padding: 20px; display:none;}
+
+.menu--exibindo{display:block;}
+
+.navegacao a{text-transform: none;}
+
+.menu__item{display:block; line-height:3;}
+
+.menu__item--botao{margin-top:20px;}
+}
+
+@media(min-width: 992px){
+.menu__item{display:inline-block; padding-right:20px;}
+.menu__item:last-of-type{padding-right:0px;}
+
+}
+
+/*--------------------*\
+  TITULO-FORMULARIO
+\*--------------------*/
+.titulo-formulario {margin: 0; margin-bottom: 40px; border-bottom: 1px solid #ccc;
+  font-size: 2.6rem;font-weight: normal;color: #004b86;}
+
+
+/*--------------------*\
+  GRUPO-ENTRADA
+\*--------------------*/
+.grupo-entrada { margin-bottom: 15px;}
+
+.grupo-entrada > label {display: block;font-weight: bold;}
+
+
+/*--------------------*\
+  CAMPO
+\*--------------------*/
+.campo {display: block; width: 100%; height:2.8em; font-size:1.4rem; padding:5px; border:1px solid #ccc;
+ border-radius:5px; background-color:#fff;}
