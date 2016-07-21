@@ -2,8 +2,8 @@
 	<section class="layout-chamada">
 		<div class="container">
 			<div class="chamada">
-				<h1 class="chamada__titulo">Tenha seu próprio aplicativo</h1>
-				<p class="chamada__subtitulo">Desenvolvemos aplicativos android e sistemas web com boas práticas. </p>
+				<h1 class="chamada__titulo">Torne seu negócio mais competitivo usando a tecnologia</h1>
+				<p class="chamada__subtitulo">Desenvolvemos soluções atualizadas com tecnologia de ponta.</p>
 
 				<div class="chamada__acao">
 					<a href="<?=base_url('servicos')?>" class="botao  botao--principal" data-toggle="tooltip" data-placement="bottom" title="Soluções">Conheça nossas soluções</a>

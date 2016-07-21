@@ -10,7 +10,7 @@ margin-top:60px;}
 
 .layout-depoimento{padding: 80px 0; background-color:#e7e7e7;}
 
-.layout-rodape{padding: 40px 0; background-color: #484848; color:#fff; text-align:center;}
+.layout-rodape{padding: 40px 0; background-color: #000000; color:#fff; text-align:center;}
 
 @media(max-width: 991px){
 .layout-planos .row > div:not(.ultima-coluna){margin-bottom: 40px;}
