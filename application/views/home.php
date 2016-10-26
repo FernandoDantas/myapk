@@ -65,7 +65,7 @@
                 <li>Nivéis de acesso</li>
               </ul>
               <footer class="plano__rodape">
-                <a href="assine.html" class="botao botao--assinar">Conhecer</a>
+                <a href="assine.html" class="botao botao--assinar">Conhecer +</a>
               </footer>
             </article>
 
