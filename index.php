@@ -1,315 +1,405 @@
-<?php
-/**
- * CodeIgniter
- *
- * An open source application development framework for PHP
- *
- * This content is released under the MIT License (MIT)
- *
- * Copyright (c) 2014 - 2016, British Columbia Institute of Technology
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- * THE SOFTWARE.
- *
- * @package	CodeIgniter
- * @author	EllisLab Dev Team
- * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc. (https://ellislab.com/)
- * @copyright	Copyright (c) 2014 - 2016, British Columbia Institute of Technology (http://bcit.ca/)
- * @license	http://opensource.org/licenses/MIT	MIT License
- * @link	https://codeigniter.com
- * @since	Version 1.0.0
- * @filesource
- */
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+        <meta name="description" content="A Bootstrap based app landing page template">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="assets/ico/favicon.ico">
 
-/*
- *---------------------------------------------------------------
- * APPLICATION ENVIRONMENT
- *---------------------------------------------------------------
- *
- * You can load different configurations depending on your
- * current environment. Setting the environment also influences
- * things like logging and error reporting.
- *
- * This can be set to anything, but default usage is:
- *
- *     development
- *     testing
- *     production
- *
- * NOTE: If you change these, also change the error_reporting() code below
- */
-	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
+        <title>MyApk :: Desenvolvimento e marketing digital</title>
 
-/*
- *---------------------------------------------------------------
- * ERROR REPORTING
- *---------------------------------------------------------------
- *
- * Different environments will require different levels of error reporting.
- * By default development will show errors but testing and live will hide them.
- */
-switch (ENVIRONMENT)
-{
-	case 'development':
-		error_reporting(-1);
-		ini_set('display_errors', 1);
-	break;
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
 
-	case 'testing':
-	case 'production':
-		ini_set('display_errors', 0);
-		if (version_compare(PHP_VERSION, '5.3', '>='))
-		{
-			error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_STRICT & ~E_USER_NOTICE & ~E_USER_DEPRECATED);
-		}
-		else
-		{
-			error_reporting(E_ALL & ~E_NOTICE & ~E_STRICT & ~E_USER_NOTICE);
-		}
-	break;
+        <!-- Custom styles for this template -->
+        <link href="css/custom.css" rel="stylesheet">
+        <link href="css/flexslider.css" rel="stylesheet">
 
-	default:
-		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
-		echo 'The application environment is not set correctly.';
-		exit(1); // EXIT_ERROR
-}
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
 
-/*
- *---------------------------------------------------------------
- * SYSTEM DIRECTORY NAME
- *---------------------------------------------------------------
- *
- * This variable must contain the name of your "system" directory.
- * Set the path if it is not in the same directory as this file.
- */
-	$system_path = 'system';
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
 
-/*
- *---------------------------------------------------------------
- * APPLICATION DIRECTORY NAME
- *---------------------------------------------------------------
- *
- * If you want this front controller to use a different "application"
- * directory than the default one you can set its name here. The directory
- * can also be renamed or relocated anywhere on your server. If you do,
- * use an absolute (full) server path.
- * For more info please see the user guide:
- *
- * https://codeigniter.com/user_guide/general/managing_apps.html
- *
- * NO TRAILING SLASH!
- */
-	$application_folder = 'application';
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#topWrap">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-code fa-stack-1x fa-inverse"></i>
+                        </span>
+                        My<span class="title" title="MyApk" data-toggle="tooltip" data-placement="bottom">Apk</span>
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse appiNav">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#featureWrap" title="Serviços" data-toggle="tooltip" data-placement="bottom">Serviços</a></li>
+                        <li><a href="#productWrap" title="Nosso App" data-toggle="tooltip" data-placement="bottom">Nosso App</a></li>
+                        <li><a href="#pricingWrap">Pricing</a></li>
+                        <li><a href="#testimonialsWrap">Testimonials</a></li>
+                        <li><a href="#contactWrap" title="Contato" data-toggle="tooltip" data-placement="bottom">Contato</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </div>
 
-/*
- *---------------------------------------------------------------
- * VIEW DIRECTORY NAME
- *---------------------------------------------------------------
- *
- * If you want to move the view directory out of the application
- * directory, set the path to it here. The directory can be renamed
- * and relocated anywhere on your server. If blank, it will default
- * to the standard location inside your application directory.
- * If you do move this, use an absolute (full) server path.
- *
- * NO TRAILING SLASH!
- */
-	$view_folder = '';
+        <div id="topWrap" class="jumbotron">
+            <div class="container">
+                <div class="col-md-6 col-md-push-6 jumboText">
+                    <h1>Desenvolvimento e marketing</h1>
+                    <h2>Bootstrap Based Responsive Landing Page Template.</h2>
+                    <a class="btn btn-lg btn-success actionBtn" href="#">
+                        <i class="fa fa-mobile fa-4x pull-left"></i>
+                        <span class="line1">Baixe nosso app</span><br/>
+                        <span class="line2">Play Store</span>
+                    </a>
+                </div>
+                <div class="col-md-6 col-md-pull-6 hidden-xs">
+                    <div class="mobile">
+                        <div class="mobileSlider">
+                            <ul class="slides">
+                                <li>
+                                    <img src="assets/img/screen1.jpg"/>
+                                </li>
+                                <li>
+                                    <img src="assets/img/screen2.jpg"/>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="featureWrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 text-center feature">
+                        <i class="fa fa-tablet icon"></i>
+                        <h3>Desenvolvimento mobile android</h3>
+                        <p>
+                            Lorem ipsum dolizzle sit tellivizzle, boom shackalack adipiscing elit. Nullam mofo velizzle, get down get down stuff, sure cool, dizzle vizzle, arcu. Yo mamma izzle tortizzle.
+                        </p>
+                    </div>
+                    <div class="col-sm-4 text-center feature">
+                        <i class="fa fa-pencil icon"></i>
+                        <h3>Páginas e sistemas web</h3>
+                        <p>
+                            Lorem ipsum dolizzle sit tellivizzle, boom shackalack adipiscing elit. Nullam mofo velizzle, get down get down stuff, sure cool, dizzle vizzle, arcu. Yo mamma izzle tortizzle.
+                        </p>
+                    </div>
+                    <div class="col-sm-4 text-center feature">
+                        <i class="fa fa-star icon"></i>
+                        <h3>Marketing automation</h3>
+                        <p>
+                            Lorem ipsum dolizzle sit tellivizzle, boom shackalack adipiscing elit. Nullam mofo velizzle, get down get down stuff, sure cool, dizzle vizzle, arcu. Yo mamma izzle tortizzle.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- /featureWrap -->
+
+        <div id="productWrap" class="altWrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2 class="sectionTitle">Modern &amp; clean landing page theme</h2>
+                        <h3 class="sectionTitle">Lorem ipsum dolizzle sit tellivizzle, boom shackalack adipiscing elit. Nullam mofo velizzle, sure cool.</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5 col-md-offset-1">
+                        <div class="imgWrap">
+                            <img class="img-responsive" src="assets/img/tablet.png"/>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="productFeatures clearfix">
+                            <div class="col-xs-2 icon">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-trophy fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </div>
+                            <div class="col-xs-10">
+                                <h3>Amazing features</h3>
+                                <p>Vestibulum tellivizzle i saw beyonces tizzles and my pizzle went crizzle primis gangsta faucibus fizzle luctizzle izzle stuff posuere mammasay mammasa mamma oo sa Daahng dawg.</p>
+                            </div>
+                            <div class="col-xs-2 icon">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-cog fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </div>
+                            <div class="col-xs-10">
+                                <h3>Fully customizeable</h3>
+                                <p>Vestibulum tellivizzle i saw beyonces tizzles and my pizzle went crizzle primis gangsta faucibus fizzle luctizzle izzle stuff posuere mammasay mammasa mamma oo sa Daahng dawg.</p>
+                            </div>
+                            <div class="col-xs-2 icon">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-bars fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </div>
+                            <div class="col-xs-10">
+                                <h3>Clean &amp; functional layout</h3>
+                                <p>Vestibulum tellivizzle i saw beyonces tizzles and my pizzle went crizzle primis gangsta faucibus fizzle luctizzle izzle stuff posuere mammasay mammasa mamma oo sa Daahng dawg.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- /productWrap -->
+
+        <div id="pricingWrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2 class="sectionTitle">Ready to get started?</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <ul class="priceTable">
+                            <li class="title">Basic Plan</li>
+                            <li class="description">For basic people</li>
+                            <li class="price">$9.99</li>
+                            <ul class="features">
+                                <li>Phasellizzle brizzle</li>
+                                <li>Crizzle aliquizzle</li>
+                                <li>And a lot more gizzle</li>
+                            </ul>
+                            <li class="call">
+                                <a class="btn btn-success btn-lg" href="#">Buy Now</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <ul class="priceTable alt">
+                            <li class="title">Super Plan</li>
+                            <li class="description">For super people</li>
+                            <li class="price">$19.99</li>
+                            <ul class="features">
+                                <li>Phasellizzle brizzle</li>
+                                <li>Crizzle aliquizzle</li>
+                                <li>And a lot more gizzle</li>
+                            </ul>
+                            <li class="call">
+                                <a class="btn btn-success btn-lg" href="#">Buy Now</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <ul class="priceTable">
+                            <li class="title">Awesome Plan</li>
+                            <li class="description">For awesome people</li>
+                            <li class="price">$29.99</li>
+                            <ul class="features">
+                                <li>Phasellizzle brizzle</li>
+                                <li>Crizzle aliquizzle</li>
+                                <li>And a lot more gizzle</li>
+                            </ul>
+                            <li class="call">
+                                <a class="btn btn-success btn-lg" href="#">Buy Now</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- /pricingWrap -->
+
+        <div id="testimonialsWrap" class="altWrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2 class="sectionTitle">What people say</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="flexslider">
+                            <ul class="slides">
+                                <li>
+                                    <div class="quote">"Etizzle laoreet doggy dope nisl. Dang pulvinizzle, ipsizzle dawg."</div>
+                                    <div class="author">Martin Nizzle</div>
+                                </li>
+                                <li>
+                                    <div class="quote">"Crazy tellus urna, yo mamma check out this, eleifend you son of a bizzle."</div>
+                                    <div class="author">Jennifer Aliquizzle</div>
+                                </li>
+                                <li>
+                                    <div class="quote">"Praesent i saw beyonces tizzles and my pizzle went crizzle turpizzle."</div>
+                                    <div class="author">William Lorizzle</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- /testimonialsWrap -->
+
+        <div id="contactWrap">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h2 class="sectionTitle">Contato</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 text-center">
+                            <div class="blurb">
+                                Quer conversar? Envie-nos uma mensagem. Gostaríamos muito de ouvir você
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 col-sm-offset-2">
+                            <div class="inputContainer">
+                                <label>Name</label>
+                                <input type="text" name="contactName" id="contactName" value="" class="form-control" autocomplete="off" />
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="inputContainer">
+                                <label class="screen-reader-text">Email</label>
+                                <input type="text" name="email" id="email" value="" class="form-control" autocomplete="off"  />
+                            </div>
+                        </div>
+                        <div class="col-sm-8 col-sm-offset-2">
+                            <div class="inputContainer">
+                                <label class="screen-reader-text">Message</label>
+                                <textarea name="comments" id="commentsText" class="form-control" autocomplete="off"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-sm-8 col-sm-offset-2">
+                            <button name="submit" type="button" class="btn btn-primary btn-lg">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- /contactWrap -->
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <p>Copyright &copy; 2014 AppBay - Responsive App Landing Page Template. Built by <a href="http://bootstrapbay.com">BootstrapBay</a>. All Rights Reserved</p>
+                        <p class="social">
+                            <a href="https://www.facebook.com/bootstrapbay">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <a href="https://twitter.com/bootstrapbay">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <a href="https://plus.google.com/+BootstrapbayThemes">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <a href="http://www.youtube.com/user/bootstrapbayofficial">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
 
-/*
- * --------------------------------------------------------------------
- * DEFAULT CONTROLLER
- * --------------------------------------------------------------------
- *
- * Normally you will set your default controller in the routes.php file.
- * You can, however, force a custom routing by hard-coding a
- * specific controller class/function here. For most applications, you
- * WILL NOT set your routing here, but it's an option for those
- * special instances where you might want to override the standard
- * routing in a specific front controller that shares a common CI installation.
- *
- * IMPORTANT: If you set the routing here, NO OTHER controller will be
- * callable. In essence, this preference limits your application to ONE
- * specific controller. Leave the function name blank if you need
- * to call functions dynamically via the URI.
- *
- * Un-comment the $routing array below to use this feature
- */
-	// The directory name, relative to the "controllers" directory.  Leave blank
-	// if your controller is not in a sub-directory within the "controllers" one
-	// $routing['directory'] = '';
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/flexslider.js"></script>
+        <script src="js/script.js"></script>
 
-	// The controller class file name.  Example:  mycontroller
-	// $routing['controller'] = '';
+        <script type="text/javascript">
+            $(document).ready(function () {
 
-	// The controller function you wish to be called.
-	// $routing['function']	= '';
+                $('.mobileSlider').flexslider({
+                    animation: "slide",
+                    slideshowSpeed: 3000,
+                    controlNav: false,
+                    directionNav: true,
+                    prevText: "&#171;",
+                    nextText: "&#187;"
+                });
+                $('.flexslider').flexslider({
+                    animation: "slide",
+                    directionNav: false
+                });
 
+                $('a[href*=#]:not([href=#])').click(function () {
+                    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                        if ($(window).width() < 768) {
+                            if (target.length) {
+                                $('html,body').animate({
+                                    scrollTop: target.offset().top - $('.navbar-header').outerHeight(true) + 1
+                                }, 1000);
+                                return false;
+                            }
+                        } else {
+                            if (target.length) {
+                                $('html,body').animate({
+                                    scrollTop: target.offset().top - $('.navbar').outerHeight(true) + 1
+                                }, 1000);
+                                return false;
+                            }
+                        }
 
-/*
- * -------------------------------------------------------------------
- *  CUSTOM CONFIG VALUES
- * -------------------------------------------------------------------
- *
- * The $assign_to_config array below will be passed dynamically to the
- * config class when initialized. This allows you to set custom config
- * items or override any default config values found in the config.php file.
- * This can be handy as it permits you to share one application between
- * multiple front controller files, with each file containing different
- * config values.
- *
- * Un-comment the $assign_to_config array below to use this feature
- */
-	// $assign_to_config['name_of_config_item'] = 'value of config item';
+                    }
+                });
 
+                $('#toTop').click(function () {
+                    $('html,body').animate({
+                        scrollTop: 0
+                    }, 1000);
+                });
 
+                var timer;
+                $(window).bind('scroll', function () {
+                    clearTimeout(timer);
+                    timer = setTimeout(refresh, 50);
+                });
+                var refresh = function () {
+                    if ($(window).scrollTop() > 100) {
+                        $(".tagline").fadeTo("slow", 0);
+                    } else {
+                        $(".tagline").fadeTo("slow", 1);
+                    }
+                };
 
-// --------------------------------------------------------------------
-// END OF USER CONFIGURABLE SETTINGS.  DO NOT EDIT BELOW THIS LINE
-// --------------------------------------------------------------------
-
-/*
- * ---------------------------------------------------------------
- *  Resolve the system path for increased reliability
- * ---------------------------------------------------------------
- */
-
-	// Set the current directory correctly for CLI requests
-	if (defined('STDIN'))
-	{
-		chdir(dirname(__FILE__));
-	}
-
-	if (($_temp = realpath($system_path)) !== FALSE)
-	{
-		$system_path = $_temp.DIRECTORY_SEPARATOR;
-	}
-	else
-	{
-		// Ensure there's a trailing slash
-		$system_path = strtr(
-			rtrim($system_path, '/\\'),
-			'/\\',
-			DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
-		).DIRECTORY_SEPARATOR;
-	}
-
-	// Is the system path correct?
-	if ( ! is_dir($system_path))
-	{
-		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
-		echo 'Your system folder path does not appear to be set correctly. Please open the following file and correct this: '.pathinfo(__FILE__, PATHINFO_BASENAME);
-		exit(3); // EXIT_CONFIG
-	}
-
-/*
- * -------------------------------------------------------------------
- *  Now that we know the path, set the main path constants
- * -------------------------------------------------------------------
- */
-	// The name of THIS file
-	define('SELF', pathinfo(__FILE__, PATHINFO_BASENAME));
-
-	// Path to the system directory
-	define('BASEPATH', $system_path);
-
-	// Path to the front controller (this file) directory
-	define('FCPATH', dirname(__FILE__).DIRECTORY_SEPARATOR);
-
-	// Name of the "system" directory
-	define('SYSDIR', basename(BASEPATH));
-
-	// The path to the "application" directory
-	if (is_dir($application_folder))
-	{
-		if (($_temp = realpath($application_folder)) !== FALSE)
-		{
-			$application_folder = $_temp;
-		}
-		else
-		{
-			$application_folder = strtr(
-				rtrim($application_folder, '/\\'),
-				'/\\',
-				DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
-			);
-		}
-	}
-	elseif (is_dir(BASEPATH.$application_folder.DIRECTORY_SEPARATOR))
-	{
-		$application_folder = BASEPATH.strtr(
-			trim($application_folder, '/\\'),
-			'/\\',
-			DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
-		);
-	}
-	else
-	{
-		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
-		echo 'Your application folder path does not appear to be set correctly. Please open the following file and correct this: '.SELF;
-		exit(3); // EXIT_CONFIG
-	}
-
-	define('APPPATH', $application_folder.DIRECTORY_SEPARATOR);
-
-	// The path to the "views" directory
-	if ( ! isset($view_folder[0]) && is_dir(APPPATH.'views'.DIRECTORY_SEPARATOR))
-	{
-		$view_folder = APPPATH.'views';
-	}
-	elseif (is_dir($view_folder))
-	{
-		if (($_temp = realpath($view_folder)) !== FALSE)
-		{
-			$view_folder = $_temp;
-		}
-		else
-		{
-			$view_folder = strtr(
-				rtrim($view_folder, '/\\'),
-				'/\\',
-				DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
-			);
-		}
-	}
-	elseif (is_dir(APPPATH.$view_folder.DIRECTORY_SEPARATOR))
-	{
-		$view_folder = APPPATH.strtr(
-			trim($view_folder, '/\\'),
-			'/\\',
-			DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
-		);
-	}
-	else
-	{
-		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
-		echo 'Your view folder path does not appear to be set correctly. Please open the following file and correct this: '.SELF;
-		exit(3); // EXIT_CONFIG
-	}
-
-	define('VIEWPATH', $view_folder.DIRECTORY_SEPARATOR);
-
-/*
- * --------------------------------------------------------------------
- * LOAD THE BOOTSTRAP FILE
- * --------------------------------------------------------------------
- *
- * And away we go...
- */
-require_once BASEPATH.'core/CodeIgniter.php';
+            });
+        </script>
+    </body>
+</html>
