@@ -51,7 +51,7 @@
                         <li><a href="#featureWrap" title="Serviços" data-toggle="tooltip" data-placement="bottom">Serviços</a></li>
                         <li><a href="#productWrap" title="Nosso App" data-toggle="tooltip" data-placement="bottom">Nosso App</a></li>
                         <li><a href="#pricingWrap" title="Orçamento" data-toggle="tooltip" data-placement="bottom">Orçamento</a></li>
-                        <li><a href="#testimonialsWrap" title="Depoimento" data-toggle="tooltip" data-placement="bottom">Depoimentos</a></li>
+                        <li><a href="#testimonialsWrap" title="Depoimentos" data-toggle="tooltip" data-placement="bottom">Depoimentos</a></li>
                         <li><a href="#contactWrap" title="Contato" data-toggle="tooltip" data-placement="bottom">Contato</a></li>
                     </ul>
                 </div><!--/.nav-collapse -->
