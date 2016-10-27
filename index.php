@@ -50,8 +50,8 @@
                     <ul class="nav navbar-nav">
                         <li><a href="#featureWrap" title="Serviços" data-toggle="tooltip" data-placement="bottom">Serviços</a></li>
                         <li><a href="#productWrap" title="Nosso App" data-toggle="tooltip" data-placement="bottom">Nosso App</a></li>
-                        <li><a href="#pricingWrap">Pricing</a></li>
-                        <li><a href="#testimonialsWrap">Testimonials</a></li>
+                        <li><a href="#pricingWrap" title="Orçamento" data-toggle="tooltip" data-placement="bottom">Orçamento</a></li>
+                        <li><a href="#testimonialsWrap" title="Depoimento" data-toggle="tooltip" data-placement="bottom">Depoimentos</a></li>
                         <li><a href="#contactWrap" title="Contato" data-toggle="tooltip" data-placement="bottom">Contato</a></li>
                     </ul>
                 </div><!--/.nav-collapse -->
@@ -93,22 +93,30 @@
                     <div class="col-sm-4 text-center feature">
                         <i class="fa fa-tablet icon"></i>
                         <h3>Desenvolvimento mobile android</h3>
-                        <p>
-                            Lorem ipsum dolizzle sit tellivizzle, boom shackalack adipiscing elit. Nullam mofo velizzle, get down get down stuff, sure cool, dizzle vizzle, arcu. Yo mamma izzle tortizzle.
+                        <p>                            
+                            Hoje são raros os momentos que não podemos observar alguém utilizando um smartphone ou tablet, seja na rua, restaurantes, bares, festas, etc.
+                            Segundo estudos o celular é o principal meio de acesso à internet no Brasil e uma parcela dos brasileiros teve seu primeiro acesso através de um smartphone ou outro dispositivo móvel.
+                            E a expectativa é que este número continue crescendo.  Seguindo esta linha, o número de empresas lançando aplicativos móveis cresce consideravelmente.
+                            Criamos soluções mobile que potencializam seus negócios.
                         </p>
                     </div>
                     <div class="col-sm-4 text-center feature">
                         <i class="fa fa-pencil icon"></i>
                         <h3>Páginas e sistemas web</h3>
                         <p>
-                            Lorem ipsum dolizzle sit tellivizzle, boom shackalack adipiscing elit. Nullam mofo velizzle, get down get down stuff, sure cool, dizzle vizzle, arcu. Yo mamma izzle tortizzle.
+                            Quer criar sua presença e sua identidade virtual? Comece com a criação de seu web site. Um site é uma forma de tangibilizar sua marca e seus serviços. 
+                            Através dele é possível transmitir a imagem de uma empresa grande, confiável, moderna, etc. 
+                            Sites com mapas de localização, contatos divididos por departamentos e fotos da empresa auxiliam nesse processo. Além disso, é possível abrir um link apenas para que os clientes deixem testemunhais sobre a sua empresa, compartilhando suas experiências e motivando outras pessoas a fecharem negócios com você.
                         </p>
                     </div>
                     <div class="col-sm-4 text-center feature">
                         <i class="fa fa-star icon"></i>
                         <h3>Marketing automation</h3>
                         <p>
-                            Lorem ipsum dolizzle sit tellivizzle, boom shackalack adipiscing elit. Nullam mofo velizzle, get down get down stuff, sure cool, dizzle vizzle, arcu. Yo mamma izzle tortizzle.
+                            Páginas de captura, entrega de conteúdo, lançamentos e muito mais.
+                            E tudo sendo entregue em sequencia incríveis de conteúdo no piloto automático com e-mail marketing e marketing automation do ActiveCampaign.
+                            Imagine ter sua empresa com maquinas de venda no piloto automático, vendendo todos os dias para você e criando uma base de clientes conectados, enganjados e aquecidos para comprar seus produtos!
+                            Desenvolvemos páginas de captura, confirmação, obrigado, conteúdo, lançamento, eventos, upsell, vendas e muito mais.
                         </p>
                     </div>
                 </div>
@@ -119,8 +127,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <h2 class="sectionTitle">Modern &amp; clean landing page theme</h2>
-                        <h3 class="sectionTitle">Lorem ipsum dolizzle sit tellivizzle, boom shackalack adipiscing elit. Nullam mofo velizzle, sure cool.</h3>
+                        <h2 class="sectionTitle">Lançamos nosso app android</h2>
+                        <h3 class="sectionTitle">Nosso novo aplicativo esta funcionando!! Baixe nosso aplicativo. Avalie nosso trabalho :)</h3>
                     </div>
                 </div>
                 <div class="row">
@@ -138,8 +146,8 @@
                                 </span>
                             </div>
                             <div class="col-xs-10">
-                                <h3>Amazing features</h3>
-                                <p>Vestibulum tellivizzle i saw beyonces tizzles and my pizzle went crizzle primis gangsta faucibus fizzle luctizzle izzle stuff posuere mammasay mammasa mamma oo sa Daahng dawg.</p>
+                                <h3>Notícias</h3>
+                                <p>Em nosso app você pode aconpanhar novidades sobre tecnologia, noticias atuais e mais relevantes.</p>
                             </div>
                             <div class="col-xs-2 icon">
                                 <span class="fa-stack fa-lg">
@@ -148,8 +156,8 @@
                                 </span>
                             </div>
                             <div class="col-xs-10">
-                                <h3>Fully customizeable</h3>
-                                <p>Vestibulum tellivizzle i saw beyonces tizzles and my pizzle went crizzle primis gangsta faucibus fizzle luctizzle izzle stuff posuere mammasay mammasa mamma oo sa Daahng dawg.</p>
+                                <h3>Web services</h3>
+                                <p>Nosso aplicativo é alimentado por um web service. Um sistema web se comunicando com um aplicativo android em tempo real.</p>
                             </div>
                             <div class="col-xs-2 icon">
                                 <span class="fa-stack fa-lg">
@@ -158,8 +166,8 @@
                                 </span>
                             </div>
                             <div class="col-xs-10">
-                                <h3>Clean &amp; functional layout</h3>
-                                <p>Vestibulum tellivizzle i saw beyonces tizzles and my pizzle went crizzle primis gangsta faucibus fizzle luctizzle izzle stuff posuere mammasay mammasa mamma oo sa Daahng dawg.</p>
+                                <h3>Material Design para Android</h3>
+                                <p>Material Design (codinomeado Quantum Paper) que é uma linguagem de design desenvolvida pela Google. Uma melhoria nos "card" que estrearam no Google Now, o Material Design faz um uso mais liberal de layouts baseados em grids, animações e transições responsivas, preenchimentos, e efeitos de profundidade como luzes e sombras.</p>
                             </div>
                         </div>
                     </div>
@@ -171,52 +179,52 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <h2 class="sectionTitle">Ready to get started?</h2>
+                        <h2 class="sectionTitle">Pronto para começar?</h2>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-4">
                         <ul class="priceTable">
-                            <li class="title">Basic Plan</li>
-                            <li class="description">For basic people</li>
-                            <li class="price">$9.99</li>
+                            <li class="title">Android</li>
+                            <li class="description">Criar meu app</li>
+                            <li class="price">R$ - Peça o orçamento</li>
                             <ul class="features">
-                                <li>Phasellizzle brizzle</li>
-                                <li>Crizzle aliquizzle</li>
-                                <li>And a lot more gizzle</li>
+                                <li>Aplicativos modernos</li>
+                                <li>Customizados</li>
+                                <li>Conectados</li>
                             </ul>
                             <li class="call">
-                                <a class="btn btn-success btn-lg" href="#">Buy Now</a>
+                                <a class="btn btn-success btn-lg" href="#">Pedir orçamento</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-sm-4">
                         <ul class="priceTable alt">
-                            <li class="title">Super Plan</li>
-                            <li class="description">For super people</li>
-                            <li class="price">$19.99</li>
+                            <li class="title">Páginas e sistemas web</li>
+                            <li class="description">Criar minha página ou sistema web</li>
+                            <li class="price">R$ - Peça o orçamento</li>
                             <ul class="features">
-                                <li>Phasellizzle brizzle</li>
-                                <li>Crizzle aliquizzle</li>
-                                <li>And a lot more gizzle</li>
+                                <li>Sistemas web</li>
+                                <li>Páginas web</li>
+                                <li>Sites interativos</li>
                             </ul>
                             <li class="call">
-                                <a class="btn btn-success btn-lg" href="#">Buy Now</a>
+                                <a class="btn btn-success btn-lg" href="#">Pedir orçamento</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-sm-4">
                         <ul class="priceTable">
-                            <li class="title">Awesome Plan</li>
-                            <li class="description">For awesome people</li>
-                            <li class="price">$29.99</li>
+                            <li class="title">Marketing automation</li>
+                            <li class="description"></li>
+                            <li class="price">R$ - Peça o orçamento</li>
                             <ul class="features">
-                                <li>Phasellizzle brizzle</li>
-                                <li>Crizzle aliquizzle</li>
-                                <li>And a lot more gizzle</li>
+                                <li>E-Mail Marketing</li>
+                                <li>Redes sociais</li>
+                                <li>ActiveCampaign</li>
                             </ul>
                             <li class="call">
-                                <a class="btn btn-success btn-lg" href="#">Buy Now</a>
+                                <a class="btn btn-success btn-lg" href="#">Pedir orçamento</a>
                             </li>
                         </ul>
                     </div>
@@ -228,7 +236,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <h2 class="sectionTitle">What people say</h2>
+                        <h2 class="sectionTitle">O que falam nossos clientes</h2>
                     </div>
                 </div>
                 <div class="row">
@@ -272,7 +280,7 @@
                     <div class="row">
                         <div class="col-sm-4 col-sm-offset-2">
                             <div class="inputContainer">
-                                <label>Name</label>
+                                <label>Nome</label>
                                 <input type="text" name="contactName" id="contactName" value="" class="form-control" autocomplete="off" />
                             </div>
                         </div>
@@ -284,7 +292,7 @@
                         </div>
                         <div class="col-sm-8 col-sm-offset-2">
                             <div class="inputContainer">
-                                <label class="screen-reader-text">Message</label>
+                                <label class="screen-reader-text">Menssagem</label>
                                 <textarea name="comments" id="commentsText" class="form-control" autocomplete="off"></textarea>
                             </div>
                         </div>
@@ -300,7 +308,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 text-center">
-                        <p>Copyright &copy; 2014 AppBay - Responsive App Landing Page Template. Built by <a href="http://bootstrapbay.com">BootstrapBay</a>. All Rights Reserved</p>
+                        <p>Copyright &copy; 2016 MyApk - Desenvolvimento e marketing digital. Desenvolvido por <a href="http://fernandodantas.github.io">Fernando Dantas</a>. Todos os direitos reservados</p>
                         <p class="social">
                             <a href="https://www.facebook.com/bootstrapbay">
                                 <span class="fa-stack fa-lg">
