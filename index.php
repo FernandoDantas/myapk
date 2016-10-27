@@ -62,7 +62,7 @@
             <div class="container">
                 <div class="col-md-6 col-md-push-6 jumboText">
                     <h1>Desenvolvimento e marketing</h1>
-                    <h2>Bootstrap Based Responsive Landing Page Template.</h2>
+                    <h2>Amplie mercado e aumente vendas, sem limites!.</h2>
                     <a class="btn btn-lg btn-success actionBtn" href="#">
                         <i class="fa fa-mobile fa-4x pull-left"></i>
                         <span class="line1">Baixe nosso app</span><br/>
